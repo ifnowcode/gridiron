@@ -1,7 +1,0 @@
-Copyright 2026 Peter J. Anderson, all rights reserved.
-
-Please contact me @ ifnowcode.gmail.com if you are interested. 
-
-This is my standard non license for projects I am not sharing yet or haven't decided on license or for proprietary non open source code. A placeholder license reserving all rights until I decide what the life of the project will ultimately be. As always the door to open sourcing and collaboration is always open to discussion. I would make everything open source if it was practical.
-
-The Gridiron game is simple but a unique idea. It is the idea, game play that I want to protect but the will require patents, trademarks and copyrights which I do not have in place.

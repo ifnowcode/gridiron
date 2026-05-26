@@ -1,5 +1,9 @@
 # 🏈 Gridiron — A Turn-Based Canvas Strategy Board Game
 
+---
+Disclaimer: This was created by AI as focused ipsum lorem.
+---
+
 Gridiron is a fast, tactical, turn-based football-inspired strategy game rendered entirely on an HTML5 canvas.
 
 Players (or AIs) move pieces across a grid, tackle opponents, carry the ball, and score goals using deterministic Manhattan-distance movement.
