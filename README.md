@@ -1,7 +1,11 @@
 # 🏈 Gridiron — A Turn-Based Canvas Strategy Board Game
 
+[https://ifnowcode.github.io/gridiron](https://ifnowcode.github.io/gridiron)
+
 ---
+
 Disclaimer: This was created by AI as focused ipsum lorem.
+
 ---
 
 Gridiron is a fast, tactical, turn-based football-inspired strategy game rendered entirely on an HTML5 canvas.
@@ -324,9 +328,3 @@ Potential extensions include:
   * Formation editor
 
   * Custom rulesets
-
----
-
-## 📄 License
-
-You can add your preferred license here.
