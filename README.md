@@ -1,12 +1,29 @@
 # 🏈 Gridiron — A Turn-Based Canvas Strategy Board Game
 
+
 [https://ifnowcode.github.io/gridiron](https://ifnowcode.github.io/gridiron)
+
+---
 
 Gridiron is a fast, tactical, turn-based football-inspired strategy game rendered entirely on an HTML5 canvas.
 
 Players (or AIs) move pieces across a grid, tackle opponents, carry the ball, and score goals using deterministic Manhattan-distance movement.
 
 The project began as a DOM-based prototype using hundreds of `<div>` elements, then evolved into a clean, memory-safe, canvas-driven engine with centralized rendering, deterministic AI scheduling, and a modular ruleset.
+
+---
+
+## 🎮 Gameplay Quickstart
+
+  * Click **[link](https://ifnowcode.github.io/gridiron)** to start the game.
+
+  * Check the **'Auto Roll'** checkbox.
+
+  * Click the **'Roll'** button.
+
+  * **Move chosen piece** (blue) the number of squares rolled (bottom screen text will announce this) to get the ball and carry it to the blue goal (usually opposite side). Must have exact number to land on ball and goal. A red piece will move then move your piece(s) each time it does. 
+  
+  With auto roll checked you will not need to keep hitting the roll button.
 
 ---
 
@@ -173,7 +190,7 @@ Each formation defines:
 
   * Encourages positional play and blocking
 
-### Standard Mode
+### Death Match
 
   * Any enemy piece may be tackled
 
@@ -197,19 +214,27 @@ Each formation defines:
 
 ### Human Player
 
-  * **Roll**: Click the Roll button
+  * **Roll**: Click the Roll button or check auto roll and click roll to start.
 
-  * **Move**: Drag a piece to a legal destination
+  * **Move**: **Drag a piece** to a legal destination
 
-  * **Pass**: Skip your turn
+  * **Pass**: Click the Pass button to **skip** your turn
 
-  * **Restart**: Begin a new round
+  * **Restart**: CLick the Restart button to **begin a new round**
 
-  * **Ball Select**: Choose the emoji used for the ball
+  * **Ball Select**: Select the emoji used for the ball
+  
+  * **Formation**: Select player formation via dropdown.
+  
+  * **Difficulty**: Select progressively harder game AI with 0 as the weakest.
 
 ### Debug Options
 
-  * Toggle coordinate overlay
+  * Pause/Resume in auto play node by pressing the spacebar.
+  
+  * Toggle coordinate overlay (Press C)
+  
+  * Step when paused (Press S)
 
   * Enable/disable auto-roll
 

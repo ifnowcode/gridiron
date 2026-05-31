@@ -359,7 +359,7 @@ function render() {
   drawScoreboard();
   if (roundOver) drawText("Round Over", canvas.width / 2, canvas.height / 4, 68, "#3f3");
   if (roundOver) drawText(winner + " Scores", canvas.width / 2, canvas.height / 1.3, 68, winner === "Red" ? "#f33" : "#34f");
-  if (paused) drawText("Paused", canvas.width / 2, canvas.height / 2, 78, "#34f");
+  if (paused && autoPlay.checked) drawText("Paused", canvas.width / 2, canvas.height / 2, 78, "#34f");
 }
 
 // ====== TURN / MOVE LOGIC (simplified) ======
@@ -1630,8 +1630,11 @@ document.addEventListener("keydown", (e) => {
 
   if (e.key === " " || e.key === "Space") {
     paused = !paused;
-    console.log("Paused:", paused);
-    if (!paused) scheduleAITurn(currentPlayer, difficultySelect.value); // resume immediately
+    if (!paused && autoPlay.checked) {
+      scheduleAITurn(currentPlayer, difficultySelect.value); // resume immediately
+    } else {
+      render();
+    }
   }
 
   if (e.key === "s" || e.key === "S") {
@@ -1652,12 +1655,6 @@ document.addEventListener("keydown", (e) => {
     showCoords = !showCoords;
     statusEl.textContent = "Show Coords: " + (showCoords ? "ON" : "OFF");
     render();
-    return;
-  }
-
-  // TEMPLATE: press G for go
-  if (e.key === "g" || e.key === "G") {
-    //go = !go;
     return;
   }
 
